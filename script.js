@@ -1,11 +1,11 @@
 function carregar() {
-    let msg = document.querySelector('#msg')
-    let img = document.querySelector('#imagem')
-    let title = document.querySelector('#title')
-    let data = new Date()
-    let hora = data.getHours()
-    let minutos = data.getMinutes()
-    let segundos = data.getSeconds()
+    const msg = document.querySelector('#msg')
+    const img = document.querySelector('#imagem')
+    const title = document.querySelector('#title')
+    const data = new Date()
+    const hora = data.getHours()
+    const minutos = data.getMinutes()
+    const segundos = data.getSeconds()
     
     msg.textContent = `Agora são ${hora} horas, ${minutos} minutos, ${segundos} segundos.`
     if (hora >= 5 && hora < 12) {
